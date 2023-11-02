@@ -65,7 +65,7 @@ public class Main {
     //enciende un dispositvo en el arraylist(Funcion nueva no incluida en el Analisis y diseño)
     private static void encenderDispositivo(List<EDispositivo> dispositivos, Scanner scanner) {
         listarDispositivos(dispositivos);
-        System.out.println("Ingrese el número del dispositivo que desea encender:");
+        System.out.println("Ingrese el número del dispositivo que desea encender(El indice 0 es valido):");
         int seleccion = scanner.nextInt();
         if (seleccion >= 0 && seleccion < dispositivos.size()) {
             dispositivos.get(seleccion).encender();
@@ -79,7 +79,7 @@ public class Main {
     //funcion para apagar un dipositivo en el arraylist(Funcion nueva no incluida en el Analisis y diseño)
     private static void apagarDispositivo(List<EDispositivo> dispositivos, Scanner scanner) {
         listarDispositivos(dispositivos);
-        System.out.println("Ingrese el número del dispositivo que desea apagar:");
+        System.out.println("Ingrese el número del dispositivo que desea apagar(El indice 0 es valido):");
         int seleccion = scanner.nextInt();
         if (seleccion >= 0 && seleccion < dispositivos.size()) {
             dispositivos.get(seleccion).apagar();

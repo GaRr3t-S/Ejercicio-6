@@ -9,12 +9,12 @@ public class Computadora implements EDispositivo {
         this.encendido = encendido;
     }
 
-    
+    //getter marca
     public String getMarca() {
         return marca;
     }
 
-    //
+    //Funciones interfaz
     @Override
     public void encender() {
         encendido = true;
